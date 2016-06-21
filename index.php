@@ -5,7 +5,7 @@
 
 <html>
   <head>
-    <title>Waddle</title>
+    <title><?php echo displayTitle() ?></title>
   </head>
   <body>
     <header>
