@@ -1,9 +1,8 @@
 <?php
   $config = include('config.php');
-  global $config;
+  static $config;
   
   function displayTitle() {
-    print_r($config);
     echo $config['title'];
   }
   
