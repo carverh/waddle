@@ -14,7 +14,7 @@
     <table border="1">
       <tr>
         <td id="header" colspan="2">
-          <a href="." style="color: black; text-decoration: none"><?php displayHeader() ?>
+          <a href="." style="color: black; text-decoration: none"><?php displayHeader() ?></a>
         </td>
       </tr>
       <tr>
