@@ -1,5 +1,6 @@
 <?php
   include 'config.php';
+  include 'functions.php';
   
   function displayTitle() {
     echo $config['title'];
@@ -15,7 +16,6 @@
     $nav = simplexml_load_file('etc/nav.xml') or die('[FATAL] Nav File Load Error');
     echo '<ul id="nav">';
     foreach ($nav as $item) {
-      print_r $item;
       echo '<li class="navitem"><a class="navitem-link" href="' . $item['link'] . '">' . $item['text'] . '</a></li>';
     }
     echo '</ul>';
