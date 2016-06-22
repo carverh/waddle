@@ -15,7 +15,7 @@
     $nav = simplexml_load_file('etc/nav.xml') or die('[FATAL] Nav File Load Error');
     echo '<ul id="nav">';
     foreach ($nav as $item) {
-      echo '<li class="navitem"><a class="navitem-link" href="' . $item->link . '">' . $item->text . '</a></li>';
+      echo '<li class="navitem"><a class="navitem-link" href="' . $item->link . '">' . $item->title . '</a></li>';
     }
     echo '</ul>';
   }
