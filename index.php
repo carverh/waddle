@@ -1,29 +1,29 @@
 <?php
-  include 'etc/config.php';
-  include 'bin/core.php';
+  include 'config.php';
+  include 'core.php';
 ?>
 
 <html>
   <head>
-    <title><?php echo displayTitle() ?></title>
+    <title><?php displayTitle() ?></title>
   </head>
   <body>
     <header>
-      <?php echo displayHeader() ?>
+      <?php displayHeader() ?>
     </header>
     
     <nav>
       <ul>
-        <?php echo displayNav() ?>
+        <?php displayNav() ?>
       </ul>
     </nav>
     
     <main>
-      <?php echo displayMain() ?>
+      <?php displayMain() ?>
     </main>
     
     <footer>
-      <?php echo displayFooter() ?>
+      <?php displayFooter() ?>
     </footer>
   </body>
 </html>
