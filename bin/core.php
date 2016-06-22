@@ -1,24 +1,24 @@
 <?php
-  include '../etc/config.php';
-  include '../etc/nav.php';
+  include '../etc/config.php' or die("[FATAL] Config Load Error");
   
   function displayHeader() {
-   echo '<h1 id="blog-title">';
-   echo $config['title'];
-   echo '</h1>'
+    echo '<h1 id="title">';
+    echo $config['title'];
+    echo '</h1>'
   }
   
   function displayNav() {
-   echo '<ul id="blog-nav">';
-   foreach $nav as $item {
-     echo '<li><a href="' . l"'
-   }
-   echo '</h1>'
+    $nav = simplexml_load_file('../etc/nav.xml') or die("[FATAL] Nav File Load Error");
+    echo '<ul id="nav">';
+    foreach $nav['nav'] as $item {
+      echo '<li class="navitem"><a class="navitem-link" href="' . $item['url'] . '">' . $item['text'] . '</a></li>';
+    }
+    echo '</ul>'
   }
   
-  function displayNav() {
-   echo '<ul id="blog-nav">';
-   echo $config['title'];
-   echo '</h1>'
+  function displayMain() {
+    echo '<ul id="blog-nav">';
+    echo $config['title'];
+    echo '</h1>'
   }
 ?>
