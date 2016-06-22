@@ -22,9 +22,6 @@
         <td id="nav">
           <?php displayNav() ?>
         </td>
-        <td id="main">
-          <?php displayMain() ?>
-        </td>
       </tr>
       <tr>
         <td id="footer">
