@@ -16,11 +16,11 @@
   function displayNav() {
     global $config;
     $nav = simplexml_load_file('etc/nav.xml') or die('[FATAL] Nav File Load Error');
-    echo '<ul>';
+    echo '<table>';
     foreach ($nav as $item) {
-      echo '<li class="navitem"><a class="navitem-link" href="' . $item->link . '">' . $item->title . '</a></li>';
+      echo '<tr class="ni-tr"><td class="ni-td"><a class="navitem-link" href="' . $item->link . '">' . $item->title . '</a></td class="ni-td"></tr>';
     }
-    echo '</ul>';
+    echo '</table>';
   }
   
   function displayMain() {
