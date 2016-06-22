@@ -3,6 +3,7 @@
   global $config;
   
   function displayTitle() {
+    print_r $config;
     echo $config['title'];
   }
   
