@@ -37,4 +37,8 @@
       echo '</article>';
     }
   }
+  
+  function displayFooter() {
+    //TODO: Add Footer
+  }
 ?>
