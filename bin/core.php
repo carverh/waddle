@@ -4,7 +4,7 @@
   function displayHeader() {
     echo '<h1 id="title">';
     echo $config['title'];
-    echo '</h1>'
+    echo '</h1>';
   }
   
   function displayNav() {
