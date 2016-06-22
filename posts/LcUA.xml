@@ -1,0 +1,12 @@
+<post>
+  <title>Test</title>
+  <text>
+    <p>START</p>
+    This is a Test Post. <br />
+    <strong>Bold Text</strong>
+    <i>Italic Text</i>
+    <hr />
+    <h4>^ Line Break ^</h4>
+    <p>END</p>
+  </text>
+</post>
