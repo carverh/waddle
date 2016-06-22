@@ -32,7 +32,7 @@
       $file_title = $file->title;
       echo '<article>';
       echo '<h1 class="post-title">';
-      echo '<a class="post-title-link" href="view.php/' . $post . '">' . $file_title . '</a>';
+      echo '<a class="post-title-link" href="view?p=' . $post . '">' . $file_title . '</a>';
       echo '</h1>';
       if (strlen($file_text) > $config['home_post_length']) {
         $file_text = str_split($file_text, $config['home_post_length'])[0];
@@ -43,8 +43,19 @@
     }
   }
   
+  function displayPost($postid) {
+    global $config;
+    $file = simplexml_load_file('posts/' . $postid) or die('[FATAL] Post Load Error');
+    $file_text = $file->text->asXML();
+    $file_title = $file->title;
+    echo '<h1 class="post-title">';
+    echo $file_title;
+    echo '</h1>';
+    $file_text;
+  }
+  
   function displayFooter() {
     global $config;
-    //TODO: Add Footer
+    echo "Copyright " . $config['author'];
   }
 ?>
