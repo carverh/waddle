@@ -14,7 +14,7 @@
   <body>
     <table>
       <tr>
-        <td id="header">
+        <td id="header" colspan="2">
           <?php displayHeader() ?>
         </td>
       </tr>
