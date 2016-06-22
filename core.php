@@ -1,14 +1,13 @@
 <?php
   $config = include('config.php');
-  print_r($config);
   
   function displayTitle() {
-    echo $config['title'];
+    echo $config->title;
   }
   
   function displayHeader() {
     echo '<h1 id="title">';
-    echo $config['title'];
+    echo $config->title;
     echo '</h1>';
   }
   
@@ -31,8 +30,8 @@
       echo '<h1 class="post-title">';
       echo '<a class="post-title-link" href="view.php/' . explode($post, '.xml')[0] . '">' . $file_title . '</a>';
       echo '</h1>';
-      if (strlen($file_text) > $config['home_post_length']) {
-        $file_text = str_split($file_text, $config['home_post_length'])[0];
+      if (strlen($file_text) > $config->home_post_length) {
+        $file_text = str_split($file_text, $config->home_post_length)[0];
         echo $file_text;
         echo "...";
       } else echo $file_text;
