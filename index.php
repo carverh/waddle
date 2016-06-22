@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
   </head>
   <body>
-    <table>
+    <table border="1">
       <tr>
         <td id="header" colspan="2">
           <?php displayHeader() ?>
