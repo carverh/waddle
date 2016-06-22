@@ -51,7 +51,7 @@
     echo '<h1 class="post-title">';
     echo $file_title;
     echo '</h1>';
-    $file_text;
+    echo $file_text;
   }
   
   function displayFooter() {
