@@ -1,5 +1,6 @@
 <?php
-  global $config = include('config.php');
+  $config = include('config.php');
+  global $config;
   
   function displayTitle() {
     echo $config['title'];
