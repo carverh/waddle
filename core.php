@@ -24,7 +24,7 @@
     foreach (scandir('posts') as $post) {
       if ($post === '.' or $post === '..') continue;
       $file = simplexml_load_file('posts/' . $post) or die('[FATAL] Post Load Error');
-      $file_text = $file->text;
+      $file_text = $file->text->asXML();
       $file_title = $file->title;
       echo '<article>';
       echo '<h1 class="post-title">';
