@@ -1,18 +1,20 @@
 <?php
   $config = include('config.php');
-  static $config;
   
   function displayTitle() {
+    global $config;
     echo $config['title'];
   }
   
   function displayHeader() {
+    global $config;
     echo '<h1 id="title">';
     echo $config['title'];
     echo '</h1>';
   }
   
   function displayNav() {
+    global $config;
     $nav = simplexml_load_file('etc/nav.xml') or die('[FATAL] Nav File Load Error');
     echo '<ul id="nav">';
     foreach ($nav as $item) {
@@ -22,6 +24,7 @@
   }
   
   function displayMain() {
+    global $config;
     foreach (scandir('posts') as $post) {
       if ($post === '.' or $post === '..') continue;
       $file = simplexml_load_file('posts/' . $post) or die('[FATAL] Post Load Error');
@@ -41,6 +44,7 @@
   }
   
   function displayFooter() {
+    global $config;
     //TODO: Add Footer
   }
 ?>
