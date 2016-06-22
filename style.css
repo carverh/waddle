@@ -1,9 +1,9 @@
 body {
   background-color: slategrey;
-  margin: 1%;
 }
 
 header, nav, main, footer {
   background-color: white;
   border: 1px solid black;
+  margin: 1%;
 }
