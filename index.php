@@ -18,11 +18,11 @@
         </td>
       </tr>
       <tr>
-        <td id="main" width="90%">
-          <?php displayMain() ?>
-        </td>
         <td id="nav" width="10%">
           <?php displayNav() ?>
+        </td>
+        <td id="main" width="90%">
+          <?php displayMain() ?>
         </td>
       </tr>
       <tr>
