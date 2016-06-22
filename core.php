@@ -1,6 +1,6 @@
 <?php
   include 'config.php';
-  $config = load_config();
+  load_config();
   
   function displayTitle() {
     echo $config['title'];
