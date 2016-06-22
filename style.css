@@ -6,4 +6,9 @@ header, nav, main, footer {
   background-color: white;
   border: 1px solid black;
   margin: 1%;
+  padding: 1%;
+}
+
+nav {
+  float: left;
 }
