@@ -17,8 +17,11 @@
   }
   
   function displayMain() {
-    echo '<ul id="blog-nav">';
-    echo $config['title'];
-    echo '</h1>'
+    foreach(scandir('../posts') as $post) {
+      $file_text = file_get_contents('../posts/' . $post)
+      echo '<article>';
+      echo $config['title'];
+      echo '</article>'
+    }
   }
 ?>
