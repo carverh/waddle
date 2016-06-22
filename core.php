@@ -1,5 +1,6 @@
 <?php
   include 'config.php';
+  $config = load_config();
   
   function displayTitle() {
     echo $config['title'];
@@ -30,7 +31,7 @@
       echo '<h1 class="post-title">';
       echo '<a class="post-title-link" href="view.php/' . explode($post, '.xml')[0] . '">' . $file_title . '</a>';
       echo '</h1>';
-      if (strlen($file_text) > 255) {
+      if (strlen($file_text) > $config['home_post_length']) {
         $file_text = str_split($file_text, $config['home_post_length'])[0];
         echo $file_text;
         echo "...";
