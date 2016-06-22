@@ -1,5 +1,5 @@
 <?php
-  include '../etc/config.php';
+  include '/etc/config.php';
   
   function displayTitle() {
     echo $config['title'];
