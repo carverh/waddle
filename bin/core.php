@@ -28,7 +28,7 @@
       if (strlen($file_text) > $config['home_post_length']) {
         ftruncate($file_text, $config['home_post_length']);
         echo $file_text;
-        echo "..."
+        echo "...";
       }
       echo '</article>';
     }
