@@ -32,7 +32,7 @@
       $file_title = $file->title;
       echo '<article>';
       echo '<h1 class="post-title">';
-      echo '<a class="post-title-link" href="view.php/' . explode($post, '.xml')[1] . '">' . $file_title . '</a>';
+      echo '<a class="post-title-link" href="view.php/' . $post . '">' . $file_title . '</a>';
       echo '</h1>';
       if (strlen($file_text) > $config['home_post_length']) {
         $file_text = str_split($file_text, $config['home_post_length'])[0];
