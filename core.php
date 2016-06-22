@@ -34,7 +34,7 @@
         $file_text = str_split($file_text, $config['home_post_length'])[0];
         echo $file_text;
         echo "...";
-      }
+      } else echo $file_text;
       echo '</article>';
     }
   }
