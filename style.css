@@ -9,22 +9,22 @@ header, nav, main, footer {
   padding: 1%;
 }
 
-header {
+td header {
   height: 10%;
   width: 100%;
 }
 
-nav {
+td nav {
   height: 100%;
   width: 10%;
 }
 
-main {
+td main {
   height: 80%;
   width: 90%;
 }
 
-footer {
+td footer {
   height: 10%;
   width: 100%;
 }
