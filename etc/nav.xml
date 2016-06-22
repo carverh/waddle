@@ -1,2 +1,14 @@
 <nav>
+  <item>
+    <title>Home Page</title>
+    <link>.</link>
+  </item>
+  <item>
+    <title>HarriCF</title>
+    <link>//www.harri.cf</link>
+  </item>
+  <item>
+    <title>Waddle on GitHub</title>
+    <link>//hurl.cf/zx456mc</link>
+  </item>
 </nav>
