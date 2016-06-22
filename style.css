@@ -2,29 +2,29 @@ body {
   background-color: slategrey;
 }
 
-header, nav, main, footer {
+#header, #nav, #main, #footer {
   background-color: white;
   border: 1px solid black;
   margin: 1%;
   padding: 1%;
 }
 
-td header {
+#header {
   height: 10%;
   width: 100%;
 }
 
-td nav {
+#nav {
   height: 100%;
   width: 10%;
 }
 
-td main {
+#main {
   height: 80%;
   width: 90%;
 }
 
-td footer {
+#td footer {
   height: 10%;
   width: 100%;
 }
