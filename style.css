@@ -1,0 +1,9 @@
+body {
+  background-color: slategrey;
+  padding: 1%;
+}
+
+header, nav, main, footer {
+  background-color: white;
+  border: 1px solid black;
+}
