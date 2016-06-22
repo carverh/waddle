@@ -10,7 +10,7 @@
   function displayNav() {
     $nav = simplexml_load_file('../etc/nav.xml') or die('[FATAL] Nav File Load Error');
     echo '<ul id="nav">';
-    foreach $nav['nav'] as $item {
+    foreach ($nav['nav'] as $item) {
       echo '<li class="navitem"><a class="navitem-link" href="' . $item['url'] . '">' . $item['text'] . '</a></li>';
     }
     echo '</ul>';
