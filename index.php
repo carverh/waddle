@@ -21,12 +21,12 @@
         <td id="main" width="90%">
           <?php displayMain() ?>
         </td>
-        <td id="nav" width="90%">
+        <td id="nav" width="10%">
           <?php displayNav() ?>
         </td>
       </tr>
       <tr>
-        <td id="footer">
+        <td id="footer" colspan="2">
           <?php displayFooter() ?>
         </td> 
       </tr>
