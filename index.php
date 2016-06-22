@@ -3,9 +3,12 @@
   include 'core.php';
 ?>
 
+<!DOCTYPE html>
 <html>
   <head>
     <title><?php displayTitle() ?></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
   </head>
   <body>
     <header>
@@ -13,9 +16,7 @@
     </header>
     
     <nav>
-      <ul>
-        <?php displayNav() ?>
-      </ul>
+      <?php displayNav() ?>
     </nav>
     
     <main>
