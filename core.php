@@ -1,6 +1,6 @@
 <?php
   $config = include('config.php');
-  echo $config;
+  echo $config->home_post_length;
   foreach($config as $i) echo $i;
   
   function displayTitle() {
