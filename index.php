@@ -19,6 +19,9 @@
         </td>
       </tr>
       <tr>
+        <td id="main">
+          <?php displayMain() ?>
+        </td>
         <td id="nav">
           <?php displayNav() ?>
         </td>
