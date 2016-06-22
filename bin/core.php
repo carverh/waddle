@@ -1,5 +1,5 @@
 <?php
-  include '../etc/config.php' or die('[FATAL] Config Load Error');
+  include 'etc/config.php' or die('[FATAL] Config Load Error');
   
   function displayTitle() {
     echo $config['title'];
@@ -12,7 +12,7 @@
   }
   
   function displayNav() {
-    $nav = simplexml_load_file('../etc/nav.xml') or die('[FATAL] Nav File Load Error');
+    $nav = simplexml_load_file('etc/nav.xml') or die('[FATAL] Nav File Load Error');
     echo '<ul id="nav">';
     foreach ($nav['nav'] as $item) {
       echo '<li class="navitem"><a class="navitem-link" href="' . $item['url'] . '">' . $item['text'] . '</a></li>';
@@ -21,8 +21,8 @@
   }
   
   function displayMain() {
-    foreach(scandir('../posts') as $post) {
-      $file = simplexml_load_file('../posts/' . $post) or die('[FATAL] Post Load Error');
+    foreach(scandir('posts') as $post) {
+      $file = simplexml_load_file('posts/' . $post) or die('[FATAL] Post Load Error');
       $file_text = $file['text'];
       $file_title = $file['title'];
       echo '<article>';
