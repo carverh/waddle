@@ -20,6 +20,9 @@
     foreach(scandir('../posts') as $post) {
       $file_text = file_get_contents('../posts/' . $post)
       echo '<article>';
+      if (strlen($file_text) > $config['home_post_length']) {
+        ftruncate($file_text, $config['home_post_length']);
+      }
       echo $config['title'];
       echo '</article>'
     }
