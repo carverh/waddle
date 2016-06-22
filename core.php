@@ -16,7 +16,7 @@
     $nav = simplexml_load_file('etc/nav.xml') or die('[FATAL] Nav File Load Error');
     echo '<ul id="nav">';
     foreach ($nav as $item) {
-      echo '<li class="navitem"><a class="navitem-link" href="' . $item->'link' . '">' . $item->'text' . '</a></li>';
+      echo '<li class="navitem"><a class="navitem-link" href="' . $item->link . '">' . $item->text . '</a></li>';
     }
     echo '</ul>';
   }
@@ -25,8 +25,8 @@
     foreach (scandir('posts') as $post) {
       if ($post === '.' or $post === '..') continue;
       $file = simplexml_load_file('posts/' . $post) or die('[FATAL] Post Load Error');
-      $file_text = $file->'text';
-      $file_title = $file->'title';
+      $file_text = $file->text;
+      $file_title = $file->title;
       echo '<article>';
       echo '<h1 class="post-title">';
       echo '<a class="post-title-link" href="view.php/' . explode($post, '.xml')[0] . '">' . $file_title . '</a>';
