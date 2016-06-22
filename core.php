@@ -1,5 +1,6 @@
 <?php
   $config = include('config.php');
+  foreach($config as $i) echo $i;
   
   function displayTitle() {
     echo $config->title;
