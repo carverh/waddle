@@ -12,20 +12,33 @@
     <meta charset="UTF-8">
   </head>
   <body>
-    <header>
-      <?php displayHeader() ?>
-    </header>
-    
-    <nav>
-      <?php displayNav() ?>
-    </nav>
-    
-    <main>
-      <?php displayMain() ?>
-    </main>
-    
-    <footer>
-      <?php displayFooter() ?>
-    </footer>
+    <table>
+      <tr>
+        <td>
+          <header>
+            <?php displayHeader() ?>
+          </header>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <nav>
+            <?php displayNav() ?>
+          </nav>
+        </td>
+        <td>
+          <main>
+            <?php displayMain() ?>
+          </main>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <footer>
+            <?php displayFooter() ?>
+          </footer>
+        </td> 
+      </tr>
+    </table>
   </body>
 </html>
