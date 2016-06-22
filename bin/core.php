@@ -1,6 +1,10 @@
 <?php
   include '../etc/config.php' or die('[FATAL] Config Load Error');
   
+  function displayTitle() {
+    echo $config['title'];
+  }
+  
   function displayHeader() {
     echo '<h1 id="title">';
     echo $config['title'];
