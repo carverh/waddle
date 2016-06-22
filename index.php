@@ -14,29 +14,21 @@
   <body>
     <table>
       <tr>
-        <td>
-          <header>
-            <?php displayHeader() ?>
-          </header>
+        <td id="header">
+          <?php displayHeader() ?>
         </td>
       </tr>
       <tr>
-        <td>
-          <nav>
-            <?php displayNav() ?>
-          </nav>
+        <td id="nav">
+          <?php displayNav() ?>
         </td>
-        <td>
-          <main>
-            <?php displayMain() ?>
-          </main>
+        <td id="main">
+          <?php displayMain() ?>
         </td>
       </tr>
       <tr>
-        <td>
-          <footer>
-            <?php displayFooter() ?>
-          </footer>
+        <td id="footer">
+          <?php displayFooter() ?>
         </td> 
       </tr>
     </table>
